@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Excersise 1</title>
+<header><h1>Mateo Echeverry</h1></header>
+<h2>14 September 2022</h2>
+</head>
+
+<body>
+    <script>
+        //create and define button and input variables
+        var myButton = document.querySelector('#my-button');
+        var nameInput = document.querySelector('#name-input');
+
+        //set "Hello (name)" to pop up if user inputs anything and clicks the button
+        myButton.addEventListener('click', function () {
+            if (nameInput.value !== '') {
+            alert('Hello ' + nameInput.value);
+            }
+        });
+    </script>
+    
+    <!--instatiate bitton and input variables-->
+    <input id="name-input" type="text" placeholder="Enter your name" />
+    <button id="my-button">Click Me</button>
+</body>
+</html>
